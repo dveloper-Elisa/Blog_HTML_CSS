@@ -1,0 +1,260 @@
+:root {
+  --primary: #536bd6;
+  --secondary: #728197;
+  --third: black;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+}
+header {
+  width: 100%;
+  padding: 1.3rem 30px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+.mainHeader {
+  position: relative;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-direction: row;
+}
+ol {
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-weight: bolder;
+}
+li a {
+  text-decoration: none;
+  font-size: larger;
+  color: #728197;
+  justify-content: space-between;
+}
+ol {
+  gap: 15px;
+  display: flex;
+  margin-top: -40px;
+  padding-left: 60%;
+}
+span {
+  text-align: center;
+}
+/* main body */
+.introduction {
+  margin: 30px;
+  text-transform: capitalize;
+  align-items: center;
+  flex-direction: column;
+}
+.introduction b {
+  color: #536bd6;
+}
+.introduction h3 {
+  color: #728197;
+}
+.buttonsGroup {
+  display: flex;
+  gap: 20px;
+}
+.introduction .buttonsGroup a {
+  text-decoration: none;
+  color: #728197;
+  border: 2px solid #728197;
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.buttonsGroup #contact {
+  background-color: #536bd6;
+  color: #eee;
+}
+.myimage {
+  float: right;
+  margin-top: -150px;
+  margin-right: 100px;
+  padding-right: 0%;
+  padding-bottom: 0%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #728197;
+  background-size: contain;
+}
+.menu {
+  color: #536bd6;
+  display: none;
+  float: right;
+  padding-right: 100px;
+}
+
+/*  end of introduction */
+
+/* blog post */
+
+.blogpost1 {
+  max-width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px 3px rgb(219, 219, 219);
+  box-decoration-break: initial;
+  box-sizing: border-box;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+.blogpost1 .subdivision {
+  position: absolute;
+  margin-top: -6rem;
+  margin-left: 230px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.subdivision a {
+  text-decoration: none;
+  border: none;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #728197;
+}
+.subdivision {
+  position: relative;
+}
+.subdivision a:hover {
+  background-color: #728197;
+  color: #eee;
+  transition: 0.5s;
+}
+.blogpost1 img {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.subdivision p {
+  max-width: 250px;
+  flex-wrap: wrap;
+}
+.subdivision #date {
+  float: right;
+  color: #728197;
+}
+.subdivision span {
+  margin-top: -5px;
+}
+
+/* blog topics */
+.blogtopics h1 {
+  color: #536bd6;
+  text-decoration: dotted;
+  border: 2px solid;
+  margin-right: 50px;
+}
+.blogtopics {
+  position: relative;
+  margin-top: -60%;
+  text-transform: capitalize;
+  margin-left: 70%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.blogtopics #unorderedlist {
+  max-width: 200px;
+  list-style: none;
+}
+.blogtopics .database1 {
+  border: none;
+  border-radius: 10px;
+}
+.blogtopics .database1 a:hover {
+  color: #eee;
+  background-color: #536bd6;
+  display: block;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.blogtopics .Accessibility {
+  border: none;
+  border-radius: 10px;
+}
+.blogtopics .Accessibility a:hover {
+  color: #eee;
+  background-color: #536bd6;
+  display: block;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.blogtopics .web_performance {
+  border: none;
+  border-radius: 10px;
+}
+.blogtopics .web_performance a:hover {
+  color: #eee;
+  background-color: #536bd6;
+  display: block;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.hidenn {
+  visibility: visible;
+  display: block;
+  transform: translateX(0);
+  color: aqua;
+}
+/* media query */
+
+@media screen and (max-width: 700px) {
+  .myimage {
+    visibility: hidden;
+  }
+  .introduction {
+    text-align: center;
+    align-items: center;
+  }
+  .navBar {
+    display: none;
+  }
+  .menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  .blogpost1 img {
+    visibility: hidden;
+  }
+  .blogpost1 .subdivision {
+    margin-left: 1rem;
+  }
+  .blogpost1 {
+    margin: 30px;
+    max-width: 100%;
+  }
+  .subdivision p {
+    max-width: 350px;
+    flex-wrap: wrap;
+  }
+  .blogtopics {
+    margin-left: 50px;
+    max-width: 40%;
+    margin-top: 10%;
+    text-align: start;
+  }
+  .blogtopics .database1 a:hover {
+    border-radius: 2px;
+  }
+  .blogtopics .web_performance a:hover {
+    border-radius: 2px;
+  }
+  .blogtopics .Accessibility a:hover {
+    border-radius: 2px;
+  }
+}
